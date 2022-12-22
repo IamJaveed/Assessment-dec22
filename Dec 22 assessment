@@ -1,0 +1,50 @@
+class Employee 
+
+
+/*1) create an employee class with name,id,salary and intialize it using constructor and override toString() method
+to print the string representation of employee and an instance method which increments the salary of the employee
+and call the method inside another class MainEmployee and increment the salary and display employee information */
+{
+	String empName;
+	int empID;
+	String empsalary;
+
+	Employee()
+	{
+		
+	}
+	Employee(String empName)
+	{
+		this.empName=empName;
+	}
+	Employee(String empName , int empID)
+	{
+		this.empName=empName;
+		this.empID=empID;
+		
+	}
+	Employee(String empName, int empID, String empsalary)
+	{
+		this.empName = empName;
+		this.empID = empID;
+		this.empsalary = empsalary;
+	}
+	
+	public String toString() 
+	{
+		return " Name : "+empName+""+" EmpID : "+empID+""+" Empsalary : "+empsalary;
+	}
+	class employeedriver 
+{
+	public static void main(String[] args) 
+	
+  {
+	
+
+			Employee ref=new Employee("Javeed",12000,"7000");
+		System.out.println(ref);
+   }
+ 
+}
+
+}
