@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Sale
+public class Bookshop
 {
     protected String title;
     protected String author;
